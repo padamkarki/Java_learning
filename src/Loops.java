@@ -16,7 +16,7 @@ public class Loops {
             i++;
         }while(i<9);
 
-        //naturam numbers upto 50
+        //natural numbers upto 50
         System.out.println("Natural");
         int natural = 1;
         while(natural<=20){
