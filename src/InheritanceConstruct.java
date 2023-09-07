@@ -28,5 +28,6 @@ public class InheritanceConstruct {
     public static void main(String[] args) {
         Base2 myObj = new Base2(45);
         System.out.println("Successfully use base contructor with int input for derived or base2 class");
+        System.out.println(myObj);
     }
 }
