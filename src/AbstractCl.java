@@ -21,12 +21,11 @@ class Children2 extends Parent2{
 }
 
 
-
-
-
 public class AbstractCl {
     public static void main(String[] args) {
-        Children2 son = new Children2();
+        
+        //Parent2 son = new Parent2(); // Not alloowed
+        Children2 son = new Children2(); //alloowed
         son.greet();
     }
 }
