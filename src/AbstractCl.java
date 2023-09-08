@@ -1,10 +1,10 @@
 
 /*abstract class can't create objects as it doesnt have return statement for methods, so its children class where all
-abstract methods are overriden and have return statement*/
+abstract methods are overriden and have return statement can create objs*/
+//Cannot use multiple abstract classes to create one new class, only one abstract for one class, opposite to Interface
 abstract class Parent2{
     public Parent2(){
         System.out.println("I am a constructor method of parent class");
-
     }
     //abstract class can have normal methods as well
     public void sayHello(){
@@ -31,3 +31,4 @@ public class AbstractCl {
         son.greet();
     }
 }
+ 
