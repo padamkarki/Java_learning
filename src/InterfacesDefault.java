@@ -3,13 +3,18 @@
 interface Camera{
     void takeSnap();
     void recordVideo();
+    private void greet(){
+        System.out.println("Welcome to Samsung");
+    }// private method can be used for default method as follows.
+
     default void record4KVideo(){
+        greet();
         System.out.println("Recording in 4K"); 
     }// default method may not need to be implement in other classes. and can be override
 }
 
 interface Wifi{
-    String[] getNetworks();
+    String[] getNetworks(); //Arrays of Strings
     void connectToNet(String network);
 }
 
