@@ -1,5 +1,7 @@
 
 //In Interface all methods needs to be implemented in children class exception for default method
+//an Interface can extends another Interface, but cannot extends to class without all methods https://youtu.be/F_CrLyz5xW4?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q
+//Interface cannot implement another Interface, only classes can
 interface Camera{
     void takeSnap();
     void recordVideo();
@@ -15,7 +17,7 @@ interface Camera{
 
 interface Wifi{
     String[] getNetworks(); //Arrays of Strings
-    void connectToNet(String network);
+    void connectToNet(String network); //this method takes String inputs as argument
 }
 
 class MyCellPhone{
@@ -42,9 +44,7 @@ class MySmartPhone extends MyCellPhone implements Camera, Wifi{
     public void connectToNet(String network){
         System.out.println("Coonecting to network");
     };
-
 }
-
 
 public class InterfacesDefault {
     public static void main(String[] args) {
